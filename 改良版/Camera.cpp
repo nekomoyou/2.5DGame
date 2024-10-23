@@ -3,13 +3,16 @@
 #include<math.h>
 #define USE_LERP_CAMERA 1
 
-Camera::Camera()
+Camera::Camera(const PlayerBase& player)
 {
     //奥行0.1～1000.0までをカメラの描画範囲とする
     SetCameraNearFar(0.1f, 1000.0f);
     
+    // z軸上で、プレイヤーから一定距離離れた状態でプレイヤーを常に見続けるよう位置調整
+    pos = VGet(0, player.GetPos().y + 100, player.GetPos().z - 500.0f);
+
     //カメラの位置
-    SetCameraPositionAndTarget_UpVecY(VGet(0.0f, 10.0f, -20.0f), VGet(0.0f, 10.0f, -20.0f));
+    SetCameraPositionAndTarget_UpVecY(pos,VGet(0,200,0));
 }
 
 Camera::~Camera()

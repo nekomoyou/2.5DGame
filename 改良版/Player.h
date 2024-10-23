@@ -5,8 +5,8 @@
 class Player:public PlayerBase
 {
 public:
-    Player(int sourceModelHandle);
-    ~Player();
-    void Update()override;
+    Player(const char *path);
+    virtual ~Player();
+    //void Update()override;
 };
 

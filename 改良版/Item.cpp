@@ -1,7 +1,7 @@
 #include "Item.h"
 
 Item::Item()
-    :pos(VGet(500,0 + ImgSize,0)),animPattern(0),Hitflg(false)
+    :pos(VGet(300,0 + ImgSize,0)),animPattern(0),Hitflg(false),frame(0),ItemNum(0)
 {
     //画像の読み込み
     LoadDivGraph("img/Bluejuwel.png", Xnum * 1, Xnum, 1, ChipSize, ChipSize, Img[0], true);
@@ -11,15 +11,12 @@ Item::Item()
     LoadDivGraph("img/star.png", Xnum * 1, Xnum, 1, ChipSize, ChipSize, Img[4], true);
 }
 
-
-
 void Item::animtion()
 {
-    static int frame = 0;
     frame++;
 
     //フレームが設定されているフレームごとに
-    if (frame % 20 == 0)
+    if (frame % 10 == 0)
     {
         //アニメーションを１枚進める
         animPattern++;
@@ -29,16 +26,29 @@ void Item::animtion()
             animPattern = 0;
         }
     }
+    if (frame >= 100)
+    {
+        frame = 0;
+    }
+}
+
+void Item::SetItem()
+{
+    if (pos.y >= 1000||Hitflg == true)
+    {
+        pos = VGet(rand->Randpos(1500, ChipSize), 0, 0);
+        ItemNum = rand->RandNum(4);
+    }
 }
 
 void Item::Update()
 {
-
+    pos = VAdd(pos, VGet(0, 3, 0));
 }
 
 void Item::Draw()
 {
-    DrawExtendGraph(pos.x, pos.y, pos.x + ImgSize, pos.y + ImgSize, Img[0][animPattern], true);
+    DrawExtendGraph(pos.x, pos.y, pos.x + ImgSize, pos.y + ImgSize, Img[ItemNum][animPattern], true);
     DrawBox(pos.x, pos.y, pos.x + ImgSize, pos.y + ImgSize, GetColor(255, 0, 0), false);
 }
 

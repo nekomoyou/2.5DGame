@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+*.mv1
+*.ipch
+*.vsidx

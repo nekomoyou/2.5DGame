@@ -1,7 +1,7 @@
 #include "Player.h"
 
-Player::Player(int sourceModelHandle)
-    :PlayerBase(sourceModelHandle)
+Player::Player(const char* path)
+    :PlayerBase(path)
 {
     //ˆ—‚È‚µ
 }
@@ -11,7 +11,3 @@ Player::~Player()
     //ˆ—‚È‚µ
 }
 
-void Player::Update()
-{
-    MV1SetPosition(modelHandle, pos);
-}

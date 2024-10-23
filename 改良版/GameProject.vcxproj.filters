@@ -19,6 +19,9 @@
     <Filter Include="リソース ファイル\Item">
       <UniqueIdentifier>{129a7b9d-3053-4571-b647-40c6e1a2c893}</UniqueIdentifier>
     </Filter>
+    <Filter Include="リソース ファイル\UI">
+      <UniqueIdentifier>{f275ac6e-bcc0-4e19-9588-0fa226c2ca39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,14 +39,17 @@
     <ClCompile Include="Item.cpp">
       <Filter>リソース ファイル\Item</Filter>
     </ClCompile>
-    <ClCompile Include="ItemBase.cpp">
-      <Filter>リソース ファイル\Item</Filter>
-    </ClCompile>
     <ClCompile Include="PlayerBase.cpp">
       <Filter>リソース ファイル\Player</Filter>
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>リソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>リソース ファイル\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,14 +65,20 @@
     <ClInclude Include="Item.h">
       <Filter>リソース ファイル\Item</Filter>
     </ClInclude>
-    <ClInclude Include="ItemBase.h">
-      <Filter>リソース ファイル\Item</Filter>
-    </ClInclude>
     <ClInclude Include="PlayerBase.h">
       <Filter>リソース ファイル\Player</Filter>
     </ClInclude>
     <ClInclude Include="GameManager.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>リソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>リソース ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>リソース ファイル\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

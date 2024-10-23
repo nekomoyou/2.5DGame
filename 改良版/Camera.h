@@ -1,10 +1,16 @@
 #pragma once
 #include"DxLib.h"
+#include"PlayerBase.h"
+
+class PlayerBase;
 
 class Camera
 {
 public:
-    Camera();
+    Camera(const PlayerBase& player);
     ~Camera();
+
+private:
+    VECTOR pos;
 };
 

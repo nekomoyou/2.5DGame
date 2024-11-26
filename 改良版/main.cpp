@@ -15,7 +15,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	DxLib_Init();
 	SetDrawScreen(DX_SCREEN_BACK);
 	//ウィンドウズサイズとカラーモード
-	SetGraphMode(1920, 1000, 32);
+	SetGraphMode(1920, 1080, 32);
 
 	if (DxLib_Init() == -1)
 	{
@@ -32,6 +32,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		game->Draw();
 		game->Game();
+		
+		if (CheckHitKey(KEY_INPUT_A))
+		{
+			game->Reset();
+		}
+
 		if (CheckHitKey(KEY_INPUT_ESCAPE))
 		{
 			break;

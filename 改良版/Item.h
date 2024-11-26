@@ -7,12 +7,14 @@ class Item
 public:
     Item();
     virtual ~Item();
-    void animtion();
-    void Draw();
-    void Collusion(const VECTOR Ppos);
-    void Update();
-    bool returnflg() { return Hitflg; };
-    void SetItem();
+    void Init();                                //初期化
+    void animtion();                            //アニメーション
+    void Draw();                                //描画
+    void Collusion(const VECTOR Ppos);          //当たり判定
+    void Update();                              //更新処理
+    bool returnflg() { return Hitflg; };        //当たったのフラグ
+    int returnNum() { return ItemNum; };        //アイテムの番号
+    void SetItem();                             //アイテムを設置
 
 private:
     VECTOR pos;                                 //アイテムの位置
@@ -24,9 +26,10 @@ private:
     bool Hitflg;                                //当たり判定
     int Img[Ynum][Xnum];                        //画像
     int frame;                                  //フレーム
+    int randomNum;                              //
     int ItemNum;                                //アイテムの番号
 
-    Random* rand = new Random();
+    Random* rand = new Random();                //乱数
 
     //当たり判定
     bool HitCheck(int leftx1, int topy1, int rightx1, int bottomy1, int leftx2, int topy2, int rightx2, int bottomy2);

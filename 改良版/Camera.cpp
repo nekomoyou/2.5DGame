@@ -4,6 +4,8 @@
 #define USE_LERP_CAMERA 1
 
 Camera::Camera(const PlayerBase& player)
+    :flg(false)
+    ,lightflg(true)
 {
     //奥行0.1～1000.0までをカメラの描画範囲とする
     SetCameraNearFar(0.1f, 1000.0f);
@@ -13,6 +15,15 @@ Camera::Camera(const PlayerBase& player)
 
     //カメラの位置
     SetCameraPositionAndTarget_UpVecY(pos,VGet(0,200,0));
+
+    //ChangeLightTypeDir(Lightpos);
+
+    //SetLightEnable(false);
+}
+
+void Camera::Update()
+{
+    
 }
 
 Camera::~Camera()

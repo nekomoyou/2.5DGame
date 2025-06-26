@@ -1,1 +1,3 @@
 D:\Dxlib2DGames\GameProject\x64\Debug\GameProject.exe
+D:\由比ゼミ\2.5Dゲーム\改良版\x64\Debug\GameProject.exe
+C:\Users\namih\OneDrive\デスクトップ\作業用\改良版\x64\Debug\GameProject.exe

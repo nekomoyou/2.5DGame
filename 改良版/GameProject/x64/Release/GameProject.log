@@ -1,0 +1,23 @@
+﻿  PlayerBase.cpp
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.h(48,28): warning C4305: '初期化中': 'double' から 'const float' へ切り詰めます。
+  (ソース ファイル 'PlayerBase.cpp' をコンパイルしています)
+  
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(19,45): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(19,40): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(19,35): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(166,66): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(166,51): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(166,38): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(166,25): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(167,70): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(167,49): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(167,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\student\Desktop\2306010023\改良版\PlayerBase.cpp(167,22): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  コード生成しています。
+  2 of 135 functions ( 1.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  コード生成が終了しました。
+  GameProject.vcxproj -> C:\Users\student\Desktop\2306010023\改良版\x64\Release\GameProject.exe
+  'pwsh.exe' は、内部コマンドまたは外部コマンド、
+  操作可能なプログラムまたはバッチ ファイルとして認識されていません。

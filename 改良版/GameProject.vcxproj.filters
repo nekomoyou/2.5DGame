@@ -22,6 +22,15 @@
     <Filter Include="リソース ファイル\UI">
       <UniqueIdentifier>{f275ac6e-bcc0-4e19-9588-0fa226c2ca39}</UniqueIdentifier>
     </Filter>
+    <Filter Include="リソース ファイル\Object">
+      <UniqueIdentifier>{e90a1fb7-9a07-4835-8f5d-7edd2a7721b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\SetUp">
+      <UniqueIdentifier>{2bd2f17b-087b-4ca9-b0f9-a1e35c8ece12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene">
+      <UniqueIdentifier>{abd37322-f1c1-4385-be6f-fa504e1f5f8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -33,23 +42,50 @@
     <ClCompile Include="DelteTime.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Item.cpp">
       <Filter>リソース ファイル\Item</Filter>
     </ClCompile>
     <ClCompile Include="PlayerBase.cpp">
       <Filter>リソース ファイル\Player</Filter>
     </ClCompile>
-    <ClCompile Include="GameManager.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Time.cpp">
       <Filter>リソース ファイル\UI</Filter>
     </ClCompile>
     <ClCompile Include="Score.cpp">
       <Filter>リソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BackObject.cpp">
+      <Filter>リソース ファイル\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Animtion.cpp">
+      <Filter>リソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemTimer.cpp">
+      <Filter>リソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfere.cpp">
+      <Filter>リソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>リソース ファイル\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>リソース ファイル\SetUp</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>リソース ファイル\SetUp</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>リソース ファイル\SetUp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,17 +95,11 @@
     <ClInclude Include="DelteTime.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Item.h">
       <Filter>リソース ファイル\Item</Filter>
     </ClInclude>
     <ClInclude Include="PlayerBase.h">
       <Filter>リソース ファイル\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="GameManager.h">
-      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="Time.h">
       <Filter>リソース ファイル\UI</Filter>
@@ -79,6 +109,39 @@
     </ClInclude>
     <ClInclude Include="Score.h">
       <Filter>リソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BackObject.h">
+      <Filter>リソース ファイル\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Animtion.h">
+      <Filter>リソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemTimer.h">
+      <Filter>リソース ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfere.h">
+      <Filter>リソース ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>リソース ファイル\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>リソース ファイル\SetUp</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>リソース ファイル\SetUp</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>リソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>リソース ファイル\SetUp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

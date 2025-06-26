@@ -6,43 +6,51 @@ class PlayerBase
 public:
     PlayerBase(const char *ModelHandle);
     virtual~PlayerBase();
-    virtual void Draw();
-    virtual void Update();
-    virtual void IsMove();
 
-    void animtion();
-    void a();
+    void Init();//初期化
 
+    virtual void Draw(bool flg,bool drawflg);    //描画
+    virtual void Update();          //更新処理
+    virtual void IsMove();          //移動処理
+    void ResultAnim();
+
+    //再生するアニメーション番号
+    int ReturnAnim() { return AnimPlaybackIndex; };
+
+    //モデルハンドル
     int GetModelHandle() { return modelHandle; }
 
     // ポジションのgetter/setter.
     const VECTOR& GetPos() const { return pos; }
     void SetPos(const VECTOR set) { pos = set; }
 
-    VECTOR Hitpos;//当たり判定
+    const VECTOR& ReturnHitpos() { return Hitpos; };
 
-    typedef enum Anim
-    {
-        Stop,
-        Walk
-    };
+    bool returnflg() { return graphflg; }
 
 protected:
-    int modelHandle;//モデルハンドル
-    VECTOR pos;//モデルのポジション
-    bool pushLeft;//左を押したかのフラグ
-    bool pushRight;//右を押したかのフラグ
+    int modelHandle;        //モデルハンドル
+    VECTOR pos;             //モデルのポジション
+    VECTOR dir;             //移動距離
+    VECTOR Hitpos;          //アイテムの当たり判定
 
-    const float PlayerSpeed = 2;//プレイヤーの移動スピード
+    bool pushLeft;          //左を押したかのフラグ
+    bool pushRight;         //右を押したかのフラグ
 
-    VECTOR angle;
+    bool pushDash;          //ダッシュフラグ
+    int dashframe;          //ダッシュのフレーム
+    VECTOR gauge;           //ゲージの位置
 
-    //アニメーションの関数
-    int AnimTotalTime;//トータル時間
-    int AnimPlayTime;//再生時間
-    int AnimStopIndex;//立ち止まる
-    int AnimWalkIndex;//歩く
-    int AnimPlaybackIndex;//再生する番号
-    int AnimIndex;
+    float JumpPow;          //ジャンプの高さ
+    float Gravity;          //重力
+
+    float PlayerSpeed;      //プレイヤーの移動スピード
+    const float HitSpeed = 1.9;//当たり判定のスピード調整
+
+    VECTOR angle;           //角度
+
+    int AnimPlaybackIndex;  //再生する番号
+
+    bool graphflg;
 };
 

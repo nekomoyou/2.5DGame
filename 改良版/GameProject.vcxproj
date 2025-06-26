@@ -19,26 +19,44 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Animtion.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="BackObject.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="DelteTime.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Interfere.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemTimer.cpp" />
+    <ClCompile Include="Light.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerBase.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Score.cpp" />
+    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animtion.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="BackObject.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DelteTime.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Interfere.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemTimer.h" />
+    <ClInclude Include="Light.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerBase.h" />
     <ClInclude Include="Random.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="Sound.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
